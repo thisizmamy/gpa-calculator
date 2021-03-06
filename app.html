@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GPA Calculator</title>
+        <link rel="stylesheet" href="app.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>محاسبه GPA بر اساس سیستم نمره دهی دانشگاه های ایران</h1>
+            <form action="">
+                <input class="title" placeholder="اسم درس" type="text" />
+                <input class="score" type="number" placeholder="نمره درس" />
+                <input class="multiply" type="number" placeholder="ضریب درس" />
+                <button class="btn_submit" type="submit">اضافه کردن</button>
+            </form>
+
+            <br />
+            <br />
+            <span class="message"></span>
+            <br />
+            <br />
+            <br />
+            <p>برای محاسبه نهای GPA از دکمه زیر استفاده کنید :</p>
+            <button class="btn_calc">محاسبه</button>
+            <br />
+            <br />
+            <span class="finalGPA"></span>
+            <hr />
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

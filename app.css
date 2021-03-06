@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+    border: 1px solid grey;
+    padding: 45px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.btn_calc {
+    border: 1px solid grey;
+}
+
+input {
+    margin: 5px;
+}
+
+.message {
+    color: red;
+}
+
+.one_score {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+    width: 250px;
+    margin: 2px;
+    background-color: antiquewhite;
+}
