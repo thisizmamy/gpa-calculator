@@ -1,28 +1,66 @@
+body {
+    background-color: #fff;
+    color: #fff;
+}
+
 .container {
     text-align: center;
+    border-radius: 10px;
     border: 1px solid grey;
     padding: 45px;
     margin: 0 auto;
     width: fit-content;
+    background: #555;
 }
 
 .btn_calc {
     border: 1px solid grey;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.btn_calc:hover {
+    background: #777;
+    border: 1px solid #fff;
 }
 
 input {
     margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .message {
-    color: red;
+    display: none;
+    color: #fff;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 7px;
 }
 
 .one_score {
     border: 1px solid black;
     border-radius: 5px;
-    padding: 4px;
+    padding: 6px 10px;
     width: 250px;
     margin: 2px;
-    background-color: antiquewhite;
+    color: #fff;
+    margin: auto 4px;
+    background-color: #888;
+}
+
+.btn_submit {
+    color: white;
+    background: transparent;
+    padding: 7px;
+    border-radius: 7px 15px;
+    outline: none;
+    font-weight: bold;
+}
+
+#scoresContainer {
+    padding-top: 15px;
 }

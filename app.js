@@ -38,9 +38,12 @@ btnSubmit.addEventListener("click", (e) => {
         scoresData.gpa.push(convertedGPA);
         const html = `<span class="one_score">${courseTitle.value} : ${courseScore.value}</span>`;
 
-        container.insertAdjacentHTML("beforeend", html);
+        document
+            .querySelector("#scoresContainer")
+            .insertAdjacentHTML("beforeend", html);
 
         message.textContent = `نمره درس ${courseTitle.value} با موفقیت اضافه شد !`;
+        message.style.display = "inline-block";
 
         courseTitle.value = "";
         courseScore.value = "";
@@ -65,11 +68,4 @@ btnCalc.addEventListener("click", (e) => {
     }
 
     finalGPA.textContent = sumGPA / sumUNITS;
-    // let sum = null;
-    // let sumUnits = null;
-    // for (let i = 0; i < scoresData.names.length; i++) {
-    //     sum = scoresData.gpa[i] * scoresData.mult[i];
-    //     sumUnits += scoresData.mult[i];
-    // }
-    // finalGPA.textContent = sum / sumUnits;
 });
